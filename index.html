@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,21 +18,36 @@
     }
 
     h1 {
-      font-size: 2.8rem;
+      font-size: 2.2rem;
       color: #2c3e50;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     p {
-      max-width: 700px;
-      font-size: 1.1rem;
+      max-width: 90%;
+      font-size: 1rem;
       line-height: 1.6;
       color: #0d0b0b;
       background: #b5b3ae;
-      padding: 18px 24px;
+      padding: 15px 20px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-bottom: 25px;
+    }
+
+    .image-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
       margin-bottom: 30px;
+    }
+
+    .image-row img {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      width: 200px;   /* default width for desktop */
+      height: auto;
     }
 
     .buttons {
@@ -41,6 +55,7 @@
       gap: 20px;
       flex-wrap: wrap;
       justify-content: center;
+      margin-bottom: 40px;
     }
 
     button {
@@ -60,23 +75,51 @@
       background: #1c5980;
       transform: translateY(-2px);
     }
+
+    /* Mobile adjustments */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+        padding: 12px 16px;
+      }
+
+      .image-row img {
+        width: 80%;  /* images scale down on mobile */
+        margin-bottom: 15px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .buttons button {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
   <h1>New House Project Lamlangate 🏡</h1>
   <p>Welcome to our new house project! Explore the pictures and videos showing our hard work and its results.</p>
-<p>Target</p>
-<div style="display: flex; gap: 20px; justify-content: center;">
-  <img src="images/img1.jpeg" alt="House" style="width: 200px; height: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
-  <img src="images/img9.jpeg" alt="House" style="width: 200px; height: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
-  <img src="images/img11.jpeg" alt="House" style="width: 500px; height: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
 
-</div>
-<br>
+  <p>Target</p>
+
+  <!-- Images -->
+  <div class="image-row">
+    <img src="images/img1.jpeg" alt="House">
+    <img src="images/img9.jpeg" alt="House">
+    <img src="images/img11.jpeg" alt="House">
+  </div>
+
+  <!-- Navigation Buttons -->
   <div class="buttons">
     <button onclick="window.location.href='images.html'">📸 Picture Gallery</button>
     <button onclick="window.location.href='videos.html'">🎬 Video Gallery</button>
   </div>
 </body>
 </html>
-
