@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Picture Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    h1 { font-size: 2.5rem; font-weight: 700; }
+    h2 { font-size: 2rem; font-weight: 600; margin-top: 40px; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+      margin-bottom: 30px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    button {
+      padding: 12px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #ffffff;
+      background: #2980b9;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    button:hover {
+      background: #1c5980;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <h1>📸 House Picture Gallery</h1>
+
+  <div class="gallery">
+    <img src="images/img1.jpeg" alt="House 1">
+    <img src="images/img2.jpeg" alt="House 2">
+    <img src="images/img3.jpeg" alt="House 3">
+    <img src="images/img4.jpeg" alt="House 4">
+    <img src="images/img5.jpeg" alt="House 5">
+    <img src="images/img6.jpeg" alt="House 6">
+    <img src="images/img7.jpeg" alt="House 7">
+    <img src="images/img8.jpeg" alt="House 8">
+    <img src="images/img9.jpeg" alt="House 9">
+    <img src="images/img10.jpeg" alt="House 10">
+    <img src="images/img11.jpeg" alt="House 11">
+    <img src="images/img12.jpeg" alt="House 12">
+    <img src="images/img13.jpeg" alt="House 13">
+    <img src="images/img14.jpeg" alt="House 14">
+    <img src="images/img15.jpeg" alt="House 15">
+    <img src="images/img16.jpeg" alt="House 16">
+    <img src="images/img17.jpeg" alt="House 17">
+    <img src="images/img18.jpeg" alt="House 18">
+    <img src="images/img19.jpeg" alt="House 19">
+    <img src="images/img20.jpeg" alt="House 20">
+    <img src="images/img21.jpeg" alt="House 21">
+    <img src="images/img22.jpeg" alt="House 22">
+    <img src="images/img23.jpeg" alt="House 23">
+    <img src="images/img24.jpeg" alt="House 24x">
+
+  </div>
+
+  <div class="buttons">
+    <button onclick="window.location.href='index.html'">⬅ Back to Home</button>
+    <button onclick="window.location.href='videos.html'">🎬 Go to Video Gallery</button>
+  </div>
+</body>
+</html>
